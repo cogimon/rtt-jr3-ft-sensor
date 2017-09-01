@@ -12,4 +12,5 @@ The sensor connects to a PCI port through a cable that looks like a phone cable.
 ## TODO
    1. Fork the real code
    2. Add credit for Arne and David
-   3. Possibly add a form transformation to express the frame to which the sensor is attached.
+   3. Remove the placeholder (`.keep') files.
+   4. Possibly add a form transformation to express the frame to which the sensor is attached.
