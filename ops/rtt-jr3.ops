@@ -2,5 +2,6 @@ import("rst-rt_typekit")
 import("rtt-jr3-ft-sensor")
 loadComponent("sensor","RTT_JR3")
 setActivity("sensor",0.5,0,ORO_SCHED_OTHER)
+# path_to_file = "/dev/jr3"
 sensor.configure
 sensor.start
