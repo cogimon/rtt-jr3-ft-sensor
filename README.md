@@ -1,5 +1,5 @@
 # rtt-jr3-ft-sensor
-RTT interface for JR3 force-troque sensor. This, hopefully will provide realtime communication with the sensor. Currently we have a ROS interface thanks to Arne and David Oeser (maintainer) will bring this to RTT.
+RTT interface for JR3 force-troque sensor. This, hopefully will provide realtime communication with the sensor. Currently we have a ROS interface thanks to Arne and [David Oeser](https://github.com/Oeser) (maintainer) will bring this to RTT.
 
 ## Usage
 
@@ -8,9 +8,8 @@ RTT interface for JR3 force-troque sensor. This, hopefully will provide realtime
 The sensor connects to a PCI port through a cable that looks like a phone cable. We need to check there are any gimmicks.
 
 ### Software:
+Apart from standard orocos/rtt libraries and rst-rt data types, the driver which is a single header file is shipped with this repo.
 
 ## TODO
-   1. Fork the real code
-   2. Add credit for Arne and David
-   3. Remove the placeholder (`.keep') files.
-   4. Possibly add a form transformation to express the frame to which the sensor is attached.
+   1. Add credit for Arne   
+   2. Check the frequency of the sensor and see if it make sense for the component not to have cycle time.
