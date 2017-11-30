@@ -1,0 +1,27 @@
+1. Make a copy of the folder containing the driver's source files.
+
+2. Open a terminal window and navigate into the duplicated folder.
+
+3. Build and install the driver:
+
+	make
+	sudo cp jr3pci-driver.ko /lib/modules/`uname -r`/
+	sudo depmod
+	sudo modprobe jr3pci-driver
+	echo jr3pci-driver | sudo tee -a /etc/modules
+
+4. Open /etc/rc.local as root and insert the following *above* the "exit 0" line
+
+	chmod o+rw /dev/jr3
+
+4. Reboot the PC.
+
+5. Build and run the test applications:
+
+	sudo apt-get install libncurses5-dev
+	make test
+	make jr3mon
+	./test
+	./jr3mon
+
+Note: Building and installing the driver has to be done again after an OS kernel update.
